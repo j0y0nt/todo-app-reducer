@@ -1,0 +1,65 @@
+ul.no-bullets {
+    list-style-type: none;
+}
+
+ul.panel {
+    padding: 5px 5px 5px 5px;
+}
+
+.productContainer {
+    
+}
+
+.productItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.productCell {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.productName {
+    width: 15%;
+}
+
+.productDesc {
+    width: 40%;
+}
+
+.productStatus {
+    width: 10%;
+}
+
+.addProductPanel {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: flex-start;
+    width: 90%;
+    padding-left: 80px;
+}
+
+.field {
+    padding: 5px;
+    width: 250px;
+}
+
+.addButtonDiv {
+    display: flex;
+    align-content: center;
+    margin: 5px;
+}
+
+.addProduct {
+    width: 100px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+}
