@@ -1,6 +1,6 @@
 //import {useState} from 'react';
 
-export default function ProductList({products, onDeleteProduct}) {
+export default function ProductList({products, onDeleteProduct, onEditProduct}) {
 
     const productsHeader = (
 	    <li>
@@ -22,14 +22,16 @@ export default function ProductList({products, onDeleteProduct}) {
 	    {productsHeader}
 	    {products.map((product) => (
 		    <li key={product.id}>
-		    <Product product={product} onDeleteProduct={onDeleteProduct} />
+		    <Product product={product} onDeleteProduct={onDeleteProduct}
+		onEditProduct={onEditProduct} />
 		    </li>
 	    ))}
 	</ul>
     );
 }
 
-function Product({product, onDeleteProduct}) {
+function Product({product, onDeleteProduct, onEditProduct}) {
+
     let productContent = (
 	    <div className="productItem">
 	    <div className="productCell">
@@ -45,6 +47,8 @@ function Product({product, onDeleteProduct}) {
 	    {product.status}
 	</div>
 	    <div className="productCell productActions">
+	    <input className="productButton" type="button" value="Edit"
+	onClick={(e) => onEditProduct(product, e) }/>
 	    <input className="productButton" type="button" value="Delete"
 	onClick={() => onDeleteProduct(product.id) }/>
 	    </div>

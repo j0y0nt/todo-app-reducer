@@ -30,6 +30,8 @@ ul.panel {
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: left;
+    align-items: center;
+    display: flex;
 }
 
 .productName {
@@ -65,9 +67,23 @@ ul.panel {
 }
 
 .productButton {
-    width: 100px;
+    width: 80px;
     border: 0px;
     border-radius: 10px;
     background-color: red;
     color: #fff;
+    margin: 2px;
+}
+
+.editRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.editProductBtnRow {
+    border: 1px solid;
+    margin: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }

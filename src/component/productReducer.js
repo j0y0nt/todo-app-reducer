@@ -13,10 +13,19 @@ export function productReducer(products, action) {
 	    {
 		id: action.id,
 		name: action.name,
-		desc: action.name,
+		desc: action.desc,
 		status: 'Draft'
 	    },
-      ];
+	];
+    }
+    case 'update_product': {
+	return products.map(p => {
+	    if(p.id === action.product.id) {
+		return action.product;
+	    } else {
+		return p;
+	    }
+	});
     }
     case 'delete_product': {
 	let deleteIdx = -1;
