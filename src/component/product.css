@@ -7,21 +7,29 @@ ul.panel {
 }
 
 .productContainer {
-    
+    display: flex;
+    justify-content: center;
+}
+
+.pheader {
+    width: 20px;
 }
 
 .productItem {
     display: flex;
     flex-direction: row;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+    width: 80%;
 }
 
 .productCell {
-    border: 1px solid;
-    border-radius: 10px;
     padding: 5px 5px 5px 5px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .productName {
