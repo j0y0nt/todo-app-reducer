@@ -1,8 +1,9 @@
 
 export default function EditProduct({show, hide, product, setProduct, updateProduct}) {
    
-    function closeDialog() {
+    function closeDialog(event) {
 	hide(show => !show);
+	event.preventDefault();
     }
 
     function onInputChange(event) {
@@ -13,6 +14,7 @@ export default function EditProduct({show, hide, product, setProduct, updateProd
 	    ...product,
 	    [name]: value
         });
+	event.preventDefault();
     }
 
     function onFormSubmit(event) {
