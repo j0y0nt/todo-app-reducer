@@ -6,13 +6,13 @@ export default function AddProduct({onAddTask}) {
     
     return (<div className="addProductPanel">
 	    <div className="field">
-	    <input type="name" value={name}
+	    <input type="name" value={name} size="40" placeholder="Enter product name..."
 	    onChange={e => {
 		setName(e.target.value);
 	    }} />
 	    </div>
 	    <div className="field">
-	    <input type="desc" value={desc}
+	    <input type="desc" value={desc} size="40" placeholder="Enter product desc..."
 	    onChange={e => {
 		setDescription(e.target.value);
 	    }} />

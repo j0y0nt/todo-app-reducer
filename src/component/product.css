@@ -49,15 +49,13 @@ ul.panel {
 .addProductPanel {
     display: flex;
     flex-direction: row;
-    border: 1px solid;
-    justify-content: flex-start;
+    justify-content: center;
     width: 90%;
     padding-left: 80px;
 }
 
 .field {
     padding: 5px;
-    width: 250px;
 }
 
 .addButtonDiv {
