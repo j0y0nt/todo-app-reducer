@@ -28,7 +28,7 @@ function Product({product, onDeleteProduct}) {
 	    {product.status}
 	</div>
 	    <div className="productCell productActions">
-	    <input className="deleteProduct" type="button" value="Delete"
+	    <input className="productButton" type="button" value="Delete"
 	onClick={() => onDeleteProduct(product.id) }/>
 	    </div>
 	    </div>

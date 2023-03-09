@@ -14,7 +14,7 @@ export default function AddProduct({onAddTask}) {
 	    onChange={e => setDescription(e.target.value)} />
 	    </div>
 	    <div className="addButtonDiv">
-	    <input className="addProduct" type="button" value="Add"
+	    <input className="productButton" type="button" value="Add"
 	    onClick={() => onAddTask(name, desc) }/>
 	    </div>
 	    </div>
