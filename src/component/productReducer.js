@@ -18,6 +18,20 @@ export function productReducer(products, action) {
 	    },
       ];
     }
+    case 'delete_product': {
+	let deleteIdx = -1;
+	deleteIdx = products.findIndex(product => product.id === action.id);
+	if(deleteIdx !== -1) {
+	    const newProducts = products.splice(deleteIdx, 1);
+	    return [
+		newProducts
+	    ];
+	} else {
+	    return [
+		...products
+	    ];
+	}
+    }
     default: {
 	throw Error('Unknown action: ' + action.type);
     }
