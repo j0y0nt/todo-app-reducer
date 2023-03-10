@@ -3,6 +3,9 @@ export default function EditProduct({show, hide, task, setTask, updateTask}) {
    
     function closeDialog(event) {
 	hide(show => !show);
+	setTask({
+	    name: '', desc: ''
+	});
 	event.preventDefault();
     }
 
